@@ -141,9 +141,6 @@ alexGetByte (bs :@ p) = do
     0x09 -> return (x, bs' :@ nextTab p)
     _    -> return (x, bs' :@ nextColumn p)
 
--- We don't use line contexts:
-alexInputPrevChar = const UTF8.replacement_char
-
 -- Actual entry point into the scanner: parses a positioned bytestring into a list tokens:
 scanTokens :: Positioned ByteString -> Tokens
 scanTokens inp =

@@ -1,0 +1,8 @@
+.DS_Store
+*.o
+*.hi
+ProtocolBuffers/Scanner.hs
+ProtocolBuffers/Parser.hs
+ProtocolBuffers/Parser.info
+
+
